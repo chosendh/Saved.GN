@@ -1,3 +1,12 @@
+if not LPH_OBFUSCATED then
+    LPH_JIT_MAX = function(...) return ... end
+    LPH_NO_VIRTUALIZE = function(...) return ... end
+    LPH_ENCSTR = function(...) return ... end
+    LPH_ENCFUNC = function(...) return ... end
+    LPH_CRASH = function() end
+end
+
+
     local HttpService = game:GetService("HttpService")
     local Players = game:GetService("Players")
     local Workspace = game.Workspace
